@@ -1,0 +1,160 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+/* Header Section */
+header {
+  background-color: #0d1117;
+  color: #e6edf3;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #c9d1d9;
+}
+
+/* Section styles */
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #0d1117;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background: #007acc;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 2px;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Skills list */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #007acc;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 40px;
+}
+
+.project img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  margin-top: 10px;
+  color: #0d1117;
+}
+
+.project p {
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Resume section */
+#resume a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #007acc;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+#resume a:hover {
+  background: #005f99;
+}
+
+/* Contact */
+#contact p {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #0d1117;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 40px 16px;
+  }
+
+  .profile-pic {
+    width: 120px;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  ul li {
+    width: 100%;
+    text-align: center;
+  }
+}
